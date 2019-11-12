@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Component /> matches snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "userId": "LAN01D",
+    }
+  }
+>
+  <div>
+    <h1>
+      Hello
+       
+      world
+    </h1>
+    <FunctionalComponent
+      name="lanoid"
+    />
+  </div>
+  <FunctionalHook />
+</ContextProvider>
+`;

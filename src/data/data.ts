@@ -1,0 +1,1 @@
+export default [{"some": "kind", "of": "json"}];
