@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
-import Component from './components/Component';
+import LaunchData from './components/LaunchData';
 
-render(<Component />, document.getElementById('main'));
+render(<LaunchData />, document.getElementById('main'));

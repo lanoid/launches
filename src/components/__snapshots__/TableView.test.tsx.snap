@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TableView /> matches the snapshot 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Location
+      </th>
+      <th>
+        Launch Window Start
+      </th>
+      <th>
+        Launch Window End
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="0"
+    >
+      <td>
+        Daft Punk
+      </td>
+      <td>
+        My house
+      </td>
+      <td>
+        November 14, 2017 18:28:00 UTC
+      </td>
+      <td>
+        November 14, 2017 18:53:00 UTC
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
