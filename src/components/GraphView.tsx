@@ -21,16 +21,6 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
     const launches = launchReducer(props.launchData);
     const canvas: React.Ref<HTMLCanvasElement> = React.createRef();
 
-    const launchCount = (launches: any) => {
-        let locations = []
-        for (let launchLocation in launches) {
-            locations.push(
-                <dd key={launchLocation} className={`percentage percentage-${launches[launchLocation].length}`}>{launchLocation} {launches[launchLocation].length}</dd>
-            )
-        }
-        return locations;
-    }
-
     const launchesByLocation = (launches: any) => {
         let locations: locations = {
             labels: [],
@@ -54,6 +44,7 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
             type: 'bar',
             data: launchesByLocation(launches),
             options: {
+                maintainAspectRatio: false,
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -68,11 +59,9 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
 
     return (
         <div>
-            <dl>
-                <dt>Launches:</dt>
-                {launchCount(launches)}
-            </dl>
-            <canvas id="chart" ref={canvas}></canvas>
+            <div className="chart-container">
+                <canvas id="chart" ref={canvas}></canvas>
+            </div>
         </div>
     );
 };

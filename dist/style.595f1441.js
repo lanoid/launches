@@ -184,12 +184,18 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/index.sass":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/leaflet/dist/leaflet.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./images/layers.png":[["layers.833a3ad0.png","../node_modules/leaflet/dist/images/layers.png"],"../node_modules/leaflet/dist/images/layers.png"],"./images/layers-2x.png":[["layers-2x.7859b0a7.png","../node_modules/leaflet/dist/images/layers-2x.png"],"../node_modules/leaflet/dist/images/layers-2x.png"],"./images/marker-icon.png":[["marker-icon.28bcaf97.png","../node_modules/leaflet/dist/images/marker-icon.png"],"../node_modules/leaflet/dist/images/marker-icon.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/index.sass":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../node_modules/leaflet/dist/leaflet.css":"../node_modules/leaflet/dist/leaflet.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49437" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52239" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

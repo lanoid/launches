@@ -2,6 +2,7 @@ import * as React from 'react';
 import DictionaryContext from '../contexts/DictionaryContext';
 import TableView from './TableView';
 import GraphView from './GraphView';
+import MapView from './MapView';
 
 interface Props {
     
@@ -50,6 +51,7 @@ export default class LaunchData extends React.Component<Props, State> {
 
     render () {
         const { startDate, endDate, launchData } = this.state;
+        const { launches } = launchData;
         return (
             <section id="launchData">
                 <form onSubmit={this.fetchLaunchData}>
@@ -65,10 +67,11 @@ export default class LaunchData extends React.Component<Props, State> {
                         )}
                     </DictionaryContext.Consumer>
                 </form>
-                {launchData.hasOwnProperty('launches') && 
+                {launches && 
                     <div>
-                        <TableView launchData={launchData.launches} />
-                        <GraphView launchData={launchData.launches} />
+                        <TableView launchData={launches} />
+                        <GraphView launchData={launches} />
+                        <MapView launchData={launches} />
                     </div>
                 }
             </section>   

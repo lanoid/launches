@@ -10,4 +10,7 @@ module.exports = {
     },
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupFilesAfterEnv: ["<rootDir>/setupEnzyme.ts"],
+    moduleNameMapper: {
+        "\\.(png)$": "<rootDir>/__mocks__/fileMock.js"
+    }
 };

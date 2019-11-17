@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MapView /> matches the snapshot 1`] = `
+<Map
+  bounds={
+    Array [
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+    ]
+  }
+  center={
+    Array [
+      51,
+      0,
+    ]
+  }
+  zoom={13}
+>
+  <ForwardRef(Leaflet(TileLayer))
+    attribution="© <a href=\\"http://osm.org/copyright\\">OpenStreetMap</a> contributors"
+    url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
+  />
+  <ForwardRef(Leaflet(Marker))
+    icon={
+      NewClass {
+        "_initHooksCalled": true,
+        "options": Object {
+          "iconAnchor": Array [
+            20,
+            10,
+          ],
+          "iconSize": Array [
+            20,
+            20,
+          ],
+          "iconUrl": "test-file-stub",
+        },
+      }
+    }
+    key="0"
+    position={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
+  />
+  <ForwardRef(Leaflet(Marker))
+    icon={
+      NewClass {
+        "_initHooksCalled": true,
+        "options": Object {
+          "iconAnchor": Array [
+            20,
+            10,
+          ],
+          "iconSize": Array [
+            20,
+            20,
+          ],
+          "iconUrl": "test-file-stub",
+        },
+      }
+    }
+    key="1"
+    position={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
+  />
+  <ForwardRef(Leaflet(Marker))
+    icon={
+      NewClass {
+        "_initHooksCalled": true,
+        "options": Object {
+          "iconAnchor": Array [
+            20,
+            10,
+          ],
+          "iconSize": Array [
+            20,
+            20,
+          ],
+          "iconUrl": "test-file-stub",
+        },
+      }
+    }
+    key="2"
+    position={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
+  />
+</Map>
+`;
