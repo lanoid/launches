@@ -1,8 +1,5 @@
-# Boilerplate Project
-
-A simple, personally educational boilerplate project which allows rapid creation of react projects with typescript/jest/enzyme/sass. All compiled using [parceljs](https://parceljs.org/).
-
-_I don’t often boilerplate, but when I do, it’s light._
+# Launcher
+A small application to display launch data from `launchlibrary.net`, created in just over five hours.
 
 ## Setup
 
@@ -20,13 +17,10 @@ Parcel will attempt to run the project on http://localhost:1234
 
 ### Considerations
 
-Simple folder structure sets you up for success
+With more time, I would liked to have:
 
-- [src](https://github.com/lanoid/react-typescript-jest/tree/master/src)
-    - [components](https://github.com/lanoid/react-typescript-jest/tree/master/src/components)
-    - [contexts](https://github.com/lanoid/react-typescript-jest/tree/master/src/contexts)
-    - [data](https://github.com/lanoid/react-typescript-jest/tree/master/src/data)
-    - [helpers](https://github.com/lanoid/react-typescript-jest/tree/master/src/helpers)
-    - [hooks](https://github.com/lanoid/react-typescript-jest/tree/master/src/hooks)
-    - [style](https://github.com/lanoid/react-typescript-jest/tree/master/src/style)
-    - [types](https://github.com/lanoid/react-typescript-jest/tree/master/src/types)
+- Styled the output far more nicely
+- Ensured that the table data is represented fully accessibly
+- Broken out react Fragments
+- Refactoring where possible
+- Strengthened all tests
