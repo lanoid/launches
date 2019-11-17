@@ -5,6 +5,8 @@ A small application to display launch data from `launchlibrary.net`, created in 
 
 [Deployed Version](https://lanoid-launches.netlify.com)
 
+*Really sorry about how it looks, ran out of time to do more sass*
+
 ## Setup
 
 `npm i`
