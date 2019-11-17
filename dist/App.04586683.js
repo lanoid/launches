@@ -52727,7 +52727,8 @@ var GraphView = function GraphView(props) {
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              stepSize: 1
             }
           }]
         }
