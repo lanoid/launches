@@ -5,7 +5,8 @@ A small application to display launch data from `launchlibrary.net`, created in 
 
 [Deployed Version](https://lanoid-launches.netlify.com)
 
-*Really sorry about how it looks, ran out of time to do more sass*
+*Really sorry about how it looks, ran out of time to do more sass.*
+*I have used neither [leaflet](https://leafletjs.com) or [chartjs](https://www.chartjs.org) before*
 
 ## Setup
 
