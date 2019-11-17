@@ -1,6 +1,7 @@
 import * as React from 'react';
 import DictionaryContext from '../contexts/DictionaryContext';
 import TableView from './TableView';
+import GraphView from './GraphView';
 
 interface Props {
     
@@ -64,9 +65,11 @@ export default class LaunchData extends React.Component<Props, State> {
                         )}
                     </DictionaryContext.Consumer>
                 </form>
-                {/* <GraphView data={launchData} /> */}
                 {launchData.hasOwnProperty('launches') && 
-                    <TableView launchData={launchData.launches} />
+                    <div>
+                        <TableView launchData={launchData.launches} />
+                        <GraphView launchData={launchData.launches} />
+                    </div>
                 }
             </section>   
         )
