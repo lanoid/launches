@@ -655,6 +655,13 @@ p {
   font-size: 1.5em;
 }
 
+table th, table td {
+  padding: 5px;
+}
+table tbody tr:nth-child(odd) {
+  background: #222;
+}
+
 .leaflet-container {
   height: 400px;
   width: 100%;
