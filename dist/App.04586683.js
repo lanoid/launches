@@ -52682,7 +52682,7 @@ var React = __importStar(require("react"));
 
 var launchReducer_1 = __importDefault(require("../helpers/launchReducer"));
 
-var chart_js_1 = __importDefault(require("chart.js"));
+var Chart = require("chart.js");
 
 var GraphView = function GraphView(props) {
   var launches = launchReducer_1.default(props.launchData);
@@ -52720,10 +52720,18 @@ var GraphView = function GraphView(props) {
   };
 
   React.useEffect(function () {
-    console.log(launchesByLocation(launches));
-    new chart_js_1.default(canvas.current.getContext('2d'), {
+    new Chart(canvas.current.getContext('2d'), {
       type: 'bar',
-      data: launchesByLocation(launches)
+      data: launchesByLocation(launches),
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
     });
   });
   return React.createElement("div", null, React.createElement("dl", null, React.createElement("dt", null, "Launches:"), launchCount(launches)), React.createElement("canvas", {
