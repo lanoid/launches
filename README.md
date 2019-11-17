@@ -1,6 +1,10 @@
 # Launcher
 A small application to display launch data from `launchlibrary.net`, created in just over five hours, with help from my [react-typescript-jest](https://github.com/lanoid/react-typescript-jest) project.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0dd6589c-44ab-4bd9-8308-1628300fdd64/deploy-status)](https://app.netlify.com/sites/inspiring-brattain-31eb28/deploys)
+
+[Deployed Version](https://lanoid-launches.netlify.com)
+
 ## Setup
 
 `npm i`
