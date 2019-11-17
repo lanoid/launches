@@ -58,10 +58,8 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
     });
 
     return (
-        <div>
-            <div className="chart-container">
-                <canvas id="chart" ref={canvas}></canvas>
-            </div>
+        <div className="chart-container">
+            <canvas id="chart" ref={canvas}></canvas>
         </div>
     );
 };

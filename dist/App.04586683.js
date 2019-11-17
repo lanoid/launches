@@ -52723,12 +52723,12 @@ var GraphView = function GraphView(props) {
       }
     });
   });
-  return React.createElement("div", null, React.createElement("div", {
+  return React.createElement("div", {
     className: "chart-container"
   }, React.createElement("canvas", {
     id: "chart",
     ref: canvas
-  })));
+  }));
 };
 
 exports.default = GraphView;
