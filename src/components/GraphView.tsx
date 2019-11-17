@@ -1,9 +1,20 @@
 import * as React from 'react';
 import launchReducer from '../helpers/launchReducer';
-import Chart from 'chart.js';
+import Chart = require('chart.js');
 
 interface Props {
     launchData?: any;
+}
+
+interface launch {
+    label: string;
+    data: any[];
+    backgroundColor: string;
+}
+
+interface locations {
+    labels: any[];
+    datasets: launch[]
 }
 
 const GraphView: React.FunctionComponent<Props> = (props) => {
@@ -21,7 +32,7 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
     }
 
     const launchesByLocation = (launches: any) => {
-        let locations = {
+        let locations: locations = {
             labels: [],
             datasets: [
                 {
@@ -39,10 +50,18 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
     }
 
     React.useEffect(() => {
-        console.log(launchesByLocation(launches));
         new Chart(canvas.current.getContext('2d'), {
             type: 'bar',
-            data: launchesByLocation(launches)
+            data: launchesByLocation(launches),
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
         });
     });
 
