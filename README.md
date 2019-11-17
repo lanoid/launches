@@ -31,4 +31,4 @@ With more time, I would liked to have:
 - Refactoring where possible
 - Strengthened all tests
 - Spent time removing unnecessary modules/libs
-- Added definitions where needed instead of <any>
+- Added definitions where needed instead of `<any>`
