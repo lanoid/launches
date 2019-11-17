@@ -1,5 +1,5 @@
 # Launcher
-A small application to display launch data from `launchlibrary.net`, created in just over five hours, with help from my react-bootstrap project.
+A small application to display launch data from `launchlibrary.net`, created in just over five hours, with help from my [react-typescript-jest](https://github.com/lanoid/react-typescript-jest) project.
 
 ## Setup
 
@@ -25,3 +25,4 @@ With more time, I would liked to have:
 - Refactoring where possible
 - Strengthened all tests
 - Spent time removing unnecessary modules/libs
+- Added definitions where needed instead of <any>
