@@ -34,4 +34,4 @@ With more time, I would liked to have:
 - Spent time removing unnecessary modules/libs
 - Added definitions where needed instead of `<any>`
 - Added proper form validation
-- Catch errors form launch library
+- Catch errors from launch library
