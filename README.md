@@ -32,3 +32,5 @@ With more time, I would liked to have:
 - Strengthened all tests
 - Spent time removing unnecessary modules/libs
 - Added definitions where needed instead of `<any>`
+- Added proper form validation
+- Catch errors form launch library
