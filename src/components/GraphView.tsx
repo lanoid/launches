@@ -44,12 +44,23 @@ const GraphView: React.FunctionComponent<Props> = (props) => {
             type: 'bar',
             data: launchesByLocation(launches),
             options: {
+                legend: {
+                    labels: {
+                        fontColor: '#FFF'
+                    }
+                },
                 maintainAspectRatio: false,
                 scales: {
                     yAxes: [{
                         ticks: {
                             beginAtZero: true,
+                            fontColor: '#FFF',
                             stepSize: 1
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: '#FFF'
                         }
                     }]
                 }
