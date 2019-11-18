@@ -20,7 +20,7 @@ export default class LaunchData extends React.Component<Props, State> {
     
     constructor(props: Props){
         super(props);
-        LaunchData.yesterday.setDate(LaunchData.today.getDate() -1);
+        LaunchData.yesterday.setDate(LaunchData.today.getDate() -30);
         this.state = {
             launchData: {},
             endDate: LaunchData.today.toISOString().split('T')[0],
